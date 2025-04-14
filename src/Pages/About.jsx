@@ -1,5 +1,5 @@
 import Used from "../Components/Usedbanner.jsx"
-import ComponentA1 from "../Components/ComponentA1.jsx"
+import CompoA1 from "../Components/CompoA1.jsx"
 import ComponentA2 from "../Components/ComponentA2.jsx"
 import SectionFive from "../Components/SectionFive.jsx"
 import ComponentA3 from "../Components/ComponentA3.jsx"
@@ -10,15 +10,14 @@ import SectionEight from "../Components/SectionEight.jsx"
 import SectionTen from "../Components/SectionTen.jsx"
 import SectionEleven from "../Components/Sectionele.jsx"
 export default function About(){
-
+    
     return(
         <div>
             <Used
             name={"About Us"}
             subName={"About Us"}
             />
-
-            <ComponentA1/>
+            <CompoA1/>
             <ComponentA2/>
             <SectionFive/>
             <ComponentA3/>

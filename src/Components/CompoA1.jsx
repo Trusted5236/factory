@@ -4,7 +4,7 @@ import img from "../assets/assets/img4-300x250.jpg"
 import Tilt from "react-parallax-tilt"
 
 
-export default function ComponentA1(){
+export default function CompoA1(){
 
     const [screen, setScreen] = useState(true)
 
