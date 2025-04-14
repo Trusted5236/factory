@@ -3,7 +3,7 @@ import img from "../assets/assets/img1-300x252.jpg"
 import Tilt from "react-parallax-tilt"
 import Questions from "./Questions"
 import ContactForm from "./ContactForm"
-export default function FAQ1(){
+export default function Fqs(){
 
     const [screen, setScreen] = useState(true)
 

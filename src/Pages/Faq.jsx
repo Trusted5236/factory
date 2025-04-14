@@ -1,4 +1,4 @@
-import FAQ1 from "../Components/FAQ1.JSX"
+import Faqs from "../Components/Faqs.jsx"
 import Used from "../Components/Usedbanner"
 import SectionNine from "../Components/SectionNine.jsx"
 import SectionEight from "../Components/SectionEight.jsx"
@@ -12,7 +12,7 @@ export default function FAQ(){
             name={"Frequently Asked Questions"}
             subName={"Frequently Asked Questions"}
             />
-            <FAQ1/>
+            <Faqs/>
             <SectionEight/>
             <SectionNine/>
             <SectionTen/>
