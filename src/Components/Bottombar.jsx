@@ -22,7 +22,7 @@ export default function Bottombar() {
   }, []);
 
   return (
-    <div className={screen ? "w-full h-auto bg-black fixed bottom-0 z-20" : "hidden"}>
+    <div className={screen ? "w-full h-auto bg-black fixed bottom-0 " : "hidden"}>
       <ul className="flex flex-row items-center justify-between px-[2rem] text-white  py-[1rem]">
         <NavLink to={"/"}>
           <li className="flex flex-col items-center justify-center hover:brightness-100 brightness-75 transition-all duration-500 ease-in-out">

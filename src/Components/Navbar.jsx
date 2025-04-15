@@ -16,13 +16,18 @@ export default function NavBar() {
   const [action2, setAction2] = useState(false)
 
 
-  useEffect(()=>{
-    if(isOpen){
-        document.body.style.overflow = "hidden"
-    }else{
-        document.body.style.overflow = "auto"
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
     }
-  })
+  
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+  
 
   useEffect(() => {
     const handleResize = () => {
@@ -66,7 +71,7 @@ export default function NavBar() {
   }
 
   return (
-    <div className="w-[100%] flex items-center justify-between bg-neutral-900 text-white font-bold flex-row h-[5rem] sticky top-[4rem] z-30">
+    <div className="w-[100%] flex items-center justify-between px-[1rem] bg-neutral-900 text-white font-bold flex-row h-[5rem] sticky top-0 z-30">
       <div>
         <img src="../logo.png" alt="logo" className="h-auto w-[13rem]" />
       </div>
@@ -138,8 +143,8 @@ export default function NavBar() {
         </ul>
       </div>
 
-      <div className="hidden md:flex flex-row gap-x-6 items-center py-[1.5rem]">
-        <button className="bg-orange-600 px-4 font- py-[1.6rem]">
+      <div className="hidden md:hidden lg:flex flex-row gap-x-6 items-center py-[1.5rem]">
+        <button className="bg-orange-600 px-4 py-[1.6rem]">
           GET FREE QUOTE
         </button>
         <div className="flex flex-row gap-x-6">
@@ -152,7 +157,7 @@ export default function NavBar() {
       <div className="md:hidden px-6">
         {isOpen ? (
           <IoClose
-            className="absolute left-[14rem] top-5 text-4xl hover:animate-spinOnce z-30"
+            className="fixed right-[0] top-5 text-[4rem] hover:animate-spinOnce z-30 pr-6"
             onClick={() => setIsOpen(false)}
           />
         ) : (
@@ -164,16 +169,15 @@ export default function NavBar() {
       </div>
 
 
-
       {isOpen && (
-        <div className="bg-neutral-900/50 w-full h-auto absolute top-0 left-0 right-0 bottom-0">
+        <div className="fixed inset-0 w-full h-screen bg-neutral-900/50">
 
           <div
-            className={`absolute top-0 right-0 z-30 w-[60%] bg-neutral-900 h-[100vh] transform ${
+            className={`absolute top-0 right-0 w-[60%] bg-neutral-900 h-[100vh] transform ${
               isOpen ? "translate-x-0" : "translate-x-full"
             } transition-transform duration-300 ease-in-out`}
           >
-            <ul className="px-6 py-6 flex flex-col gap-y-5 ">
+            <ul className="px-6 py-[4rem] flex flex-col gap-y-5 ">
               <NavLink to={"/"} onClick={()=>handleNavLink()}>
                 <li className="hover:text-orange-600 border-b border-gray-400">
                   HOME
