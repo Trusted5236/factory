@@ -43,7 +43,7 @@ export default function SectionSeven(){
 
 
     return(
-        <div className={screen ? "relative bottom-[6rem] w-full h-auto" : "relative bottom-[8rem] w-full h-auto"}>
+        <div className= "relative bottom-[6rem] w-full h-auto">
 
             <div className="flex flex-col items-center justify-start">
                 <p className="text-orange-600 text-[1.3rem]">LATEST NEWS</p>

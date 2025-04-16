@@ -25,7 +25,7 @@ export default function SectionTwo(){
                 <div className="flex items-center lg:justify-start justify-center"><button className={`text-white bg-orange-600 flex items-center border px-8 py-4 text-[0.9rem] lg:text-[1rem] lg:py-4 lg:px-[2.5rem] hover:animate-straight`}>ABOUT US</button></div>
             </div>
 
-            <div className="hidden md:flex bg-slate-300 w-[100%] max-w-[50%] h-[35rem]">
+            <div className="hidden md:hidden lg:flex bg-slate-300 w-[100%] max-w-[50%] h-[35rem]">
                 <img src={img1} className={`absolute left-[35rem] top-[45rem] w-[18rem] z-10`} alt="" />
                 <img src={img2} className={`absolute top-[55rem] left-[56rem] w-[19rem] z-10`} alt="" />
                 <img src={img3} className={`absolute w-[19rem] left-[56rem] top-[35rem] z-10`} alt="" />

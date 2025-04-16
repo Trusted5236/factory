@@ -64,7 +64,7 @@ export default function SectionFour() {
   }, []);
 
   return (
-    <div className={`${largeScreen ? "mt-[18rem]" : "mt-[80rem]"}`}>
+    <div className="mt-[73rem] md:mt-[73rem] lg:mt-[15rem]">
       <div className={`${largeScreen ?  "flex flex-row items-center justify-between px-[3.5rem]" : "flex flex-col items-center text-center gap-y-4"}`}>
         <div>
           <p className="text-orange-600 text-[1.3rem]">LATEST PROJECTS</p>
@@ -79,8 +79,7 @@ export default function SectionFour() {
 
         <Swiper
         modules={[Navigation, Pagination, Scrollbar]}
-        spaceBetween={50}
-        slidesPerView={`${largeScreen ? 4 : 2}`}
+        breakpoints={{ 320: { slidesPerView: 1 }, 640: { slidesPerView: 2 }, 1024: { slidesPerView: 4 } }}
         Navigation
         pagination={{clickable:true}}
         onSlideChange={()=>console.log("slide change")}
@@ -96,10 +95,10 @@ export default function SectionFour() {
         
         >
             {projects.map((item, index)=>(
-                <SwiperSlide key={index} className="flex justify-center items-center px-[0] py-[4rem] h-auto w-full">
+                <SwiperSlide key={index} className="flex justify-center items-center px-[2rem] py-[2rem] h-auto w-full">
                     <div className="w-full h-auto hover:bg-orange-600 bg-black text-white group transition-all duration-500 ease-in-out">
                         <div>
-                            <img src={item.firstImg} alt="item-images" />
+                            <img src={item.firstImg} className="w-[100%]" alt="item-images" />
                         </div>
 
                         <div className="text-white px-[1.5rem] py-[2rem] w-full h-[100%]">

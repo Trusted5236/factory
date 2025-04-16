@@ -63,7 +63,7 @@ export default function(){
 
 
     return(
-        <div style={{backgroundImage:`url(${bg1})`}} className="bg-center bg-cover bg-no-repeat text-white font-roboto h-auto w-full">
+        <div style={{backgroundImage:`url(${bg1})`}} className="bg-center bg-cover bg-no-repeat text-white font-roboto h-auto w-full pb-[10rem]">
             <div className={`${large ? "text-center pt-[7rem]" : "text-center p-[5rem]"}`}>
                 <p className="text-orange-600 text-[1.3rem]">OUR SERVICES</p>
                 <h1 className="text-[3.5rem] font-bold">What We Offer & <br /> What We Do.</h1>
@@ -71,11 +71,11 @@ export default function(){
             </div>
 
             <div className="relative w-full h-100%">
-            <div className={`${large ? " relative top-[10rem] flex flex-row justify-around w-full" : "flex flex-col justify-center absolute top-[-2.5rem]"} gap-y-[2.5rem] items-center w-full h-auto px-[1.5rem]`}>
+            <div className="flex flex-col md:flex-col lg:flex-row justify-center absolute top-[-2.5rem] lg:top-[2rem] gap-y-[2.5rem] items-center w-full h-auto px-[1.5rem] md:top-[4rem]">
                 {items.map((item, index)=>(
                     <div key={item.id} onMouseEnter={(e)=>handleItem(item.id)} onMouseLeave={(e)=>leaveItem(item.id)} className="w-full h-auto">
 
-                    <div className={`${large ? "flex flex-col justify-around items-center my-0 mx-3 bg-white text-black px-[1.5rem] py-[3.5rem] hover:bg-orange-600 hover:text-white h-[100%] gap-y-4 hover:translate-y-[-1.5rem] transition-all duration-500 ease-in-out shadow-lg shadow-[grey]" : "flex flex-col justify-around items-center my-0 mx-3 bg-white text-black px-[1.5rem] py-[3.5rem] hover:bg-orange-600 hover:text-white h-[100%] gap-y-4 hover:translate-y-[-1.5rem] transition-all duration-500 ease-in-out shadow-lg shadow-[grey]"}`}>
+                    <div className="flex flex-col justify-around items-center my-0 mx-3 bg-white text-black px-[1.5rem] py-[3.5rem] hover:bg-orange-600 hover:text-white h-[100%] gap-y-4 hover:translate-y-[-1.5rem] transition-all duration-500 ease-in-out shadow-lg shadow-[grey]">
 
                         {img === item.id ? (<div>
                                         <img src={item.iconHover}/>
