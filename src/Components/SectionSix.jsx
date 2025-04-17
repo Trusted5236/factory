@@ -42,7 +42,7 @@ export default function SectionSix() {
   }
 
   return (
-    <div className="w-full h-auto mt-[3rem] ">
+    <div className="w-full h-auto mt-[1rem] ">
 
       <div className= "md:hidden lg:flex hidden bg-orange-600 w-[13rem] pt-[7rem]">
       </div>

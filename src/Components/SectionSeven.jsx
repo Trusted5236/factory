@@ -43,14 +43,14 @@ export default function SectionSeven(){
 
 
     return(
-        <div className= "relative bottom-[6rem] w-full h-auto">
+        <div className= "mt-6 md:mt-6 lg:mt-0 relative lg:bottom-[6rem] w-full h-auto px-[1rem]">
 
-            <div className="flex flex-col items-center justify-start">
+            <div className="flex flex-col items-center justify-start text-center md:itext-start lg:text-start">
                 <p className="text-orange-600 text-[1.3rem]">LATEST NEWS</p>
                 <h1 className="font-bold text-[3rem] pb-[2rem]">Don't Miss Anything</h1>
             </div>
 
-            <div className={screen ? "flex flex-row items-start justify-around flex-wrap w-full h-auto" : "flex flex-row items-start justify-start flex-wrap w-full h-auto gap-x-[2rem] px-2"}>
+            <div className={screen ? "flex flex-row items-start justify-around flex-wrap w-full h-auto" : "flex flex-row items-start justify-center flex-wrap w-full h-auto"}>
                 {info.map((item, index)=>(
                     <div className="group" key={index}>
                         <div className="group-hover:brightness-50 transition-all duration-500 ease-in-out">

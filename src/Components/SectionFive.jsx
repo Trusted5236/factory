@@ -45,7 +45,7 @@ export default function SectionFive() {
               </div>
 
               <div className="flex flex-col gap-y-6">
-                <p className="text-[1.1rem] md:text-[2rem] lg:text-[2rem]">{items.note}</p>
+                <p className="text-[1.1rem] md:text-[1.5rem] lg:text-[1.5rem]">{items.note}</p>
                 <div>
                 <h2 className="font-bold text-[1.4rem]">{items.testifier}</h2>
                 <p className="text-[0.85rem] text-slate-400">{items.position}</p>

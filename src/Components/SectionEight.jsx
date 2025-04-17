@@ -29,10 +29,10 @@ export default function SectionEight(){
                     <input 
                     type="search" 
                     placeholder="Enter Your Email..."
-                    className={screen ? 'px-[2rem] py-[1rem] w-[25rem] h-auto bg-[#1e140a] outline-none text-white' : 'px-[2rem] py-[1rem] w-[25rem] h-auto bg-[#1e140a] outline-none text-white'}
+                    className={screen ? 'px-[2rem] py-[1rem] w-[100%] h-auto bg-[#1e140a] outline-none text-white' : 'px-[2rem] py-[1rem] w-[100%] h-auto bg-[#1e140a] outline-none text-white'}
                     />
 
-                    <button className={screen ? 'py-[1rem] px-[2rem] w-[11rem] bg-orange-600' : "py-[1rem] px-[2rem] w-[20rem] bg-orange-600"}>Get Free Quote</button>
+                    <button className={screen ? 'py-[1rem] px-[2rem] w-[100%] bg-orange-600' : "py-[1rem] px-[2rem] w-[100%] bg-orange-600"}>Get Free Quote</button>
                 </div>
             </div>
     )
